@@ -99,4 +99,6 @@ age>18 ? console.log("adult") : console.log("child")
 
 
 //LOOPS
-
+//asdfghjkl;'
+console.log("hi")
+console.log("hi")
