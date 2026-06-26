@@ -77,13 +77,13 @@ console.log(colorr);
 //else if statement
 let height = 6;
 if(height >= 6){
-    console.log("man")
+    console.log("above 6")
 }
 else if (height < 6 && height > 5){
-    console.log("boy")
+    console.log("btw 6 and 5")
 }
 else{
-    console.log("child")
+    console.log("below 5")
 }
 //terniary operator.-->    condition ? true output : false output
 age = 14;
@@ -99,3 +99,52 @@ age>18 ? console.log("adult") : console.log("child")
 
 
 //LOOPS
+//sum from 1 to 10
+let sum = 0;
+for(let i = 1 ; i <= 10 ; i++){
+    sum += i;
+}
+console.log("sum is ", sum);
+
+let i = 1;
+while(i <= 10){
+    console.log(i);
+    i++;
+}
+//for of loop -> strings and arrays
+let str = "rajansh"
+let size = 0;
+for(let i of str){ //iterator
+    console.log(i);
+    size++;
+}
+console.log("size of name is " , size)
+
+//for in loop -> objects
+const detail = {
+// key : value
+
+    name : "Rajansh",
+    cgpa : 8,
+    isPass : true,
+};
+for(let key in detail){
+    console.log(key , "=" , detail[key]);
+}
+
+//print even no btw 1 to 100
+for(num = 0 ; num<=100 ; num++){
+    if (num % 2 === 0 ){
+        console.log(num)
+    }
+}
+//guess game
+
+// let guessno = 99;
+// userno = prompt("guess the no :");
+// while(userno != guessno){
+//     userno = prompt("wrong! guess the no again :");
+// }
+// console.log("you won");
+
+//STRINGS
