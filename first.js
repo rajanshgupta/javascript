@@ -112,9 +112,9 @@ while(i <= 10){
     i++;
 }
 //for of loop -> strings and arrays
-let str = "rajansh"
+let string = "rajansh"
 let size = 0;
-for(let i of str){ //iterator
+for(let i of string){ //iterator
     console.log(i);
     size++;
 }
@@ -135,7 +135,7 @@ for(let key in detail){
 //print even no btw 1 to 100
 for(num = 0 ; num<=100 ; num++){
     if (num % 2 === 0 ){
-        console.log(num)
+        console.log(num);
     }
 }
 //guess game
@@ -147,4 +147,76 @@ for(num = 0 ; num<=100 ; num++){
 // }
 // console.log("you won");
 
-//STRINGS
+//STRINGS -> immutable(can't be changed)
+let str = "rajansh";
+console.log(str.length);
+console.log(str[3]);
+//Template Literals
+let specialstring = `This is a template literal ${1+2}`;//written in backtag(caps + ~)
+console.log(specialstring);
+
+const object = {
+    item :"iPhone",
+    price : 60000,
+};
+output = `price of ${object.item} is ₹${object.price} `;
+console.log(output);
+//for next line -> /n
+//for more space -> /t
+
+str = "rajansh";
+let newstr = str.toUpperCase();//changes string in cap letters
+console.log(str);
+console.log(newstr);
+//same for str.toLowerCase() -> changes string in lower char
+//str.trim() -> helps to remove excess space
+let str1 = "raj";
+let str2 = "ansh";
+console.log(str1.concat(str2));//helps to join two str
+
+str = "hi";
+console.log(str.replace("h" , "b"));//replace
+
+//ARRAYS -> special types of obj, mutable(can be changed)
+let marks = [197, 82, 75, 64, 36];
+console.log (marks);
+console.log(marks.length); //property
+marks[1] = 99;
+console.log (marks);
+//to print all the elements
+//for loop
+for(let i = 0 ; i < marks.length ; i++){
+    console.log(marks[i]);
+}
+//for of loop
+for (let elem of marks) {
+    console.log(elem);
+}
+
+/*Qs. For a given array with marks of students -> [85, 97, 44, 37, 76, 60]
+Find the average marks of the entire class.*/
+marks = [85, 97, 44, 37, 76, 60];
+sum = 0;
+for(let mark of marks){
+    sum += mark;
+}
+console.log(`avg of marks is ${sum / marks.length} `);
+let veg = ['tomato' , 'cucumber' , 'onion'];
+veg.push("spinach");//add in end
+console.log(veg);
+veg.pop();//remove from end
+console.log(veg);
+//unshift() -> add on start
+//shift() -> remove from start
+
+//concat ->joins 2 arrays
+let marvelHeroes = ["thor", "spiderman", "ironman"];
+let dcHeroes = ["superman", "batman"];
+let heroes = marvelHeroes.concat(dcHeroes);
+console.log(heroes);
+console.log(marvelHeroes.slice(0 , 1));//heps to remove from 1 pos to 2nd
+//to replace something in array -> splice()
+console.log(dcHeroes.splice(1 , 1 , "women wander"));
+console.log(dcHeroes);
+
+//FUNCTIONS
